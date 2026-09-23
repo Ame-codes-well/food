@@ -1,0 +1,48 @@
+<main class="auth-page">
+	<div class="container py-5">
+		<div class="row justify-content-center align-items-center g-5">
+			<div class="col-lg-5 d-none d-lg-block">
+				<p class="auth-kicker">WELCOME TO ZOMATO</p>
+				<h1 class="display-5 fw-bold">Good food is always a good idea.</h1>
+				<p class="lead text-secondary">Create an account to discover new favourites, save restaurants, and make every meal memorable.</p>
+				<div class="auth-perks">
+					<p><span>01</span> Save your favourite places</p>
+					<p><span>02</span> Track every order in real time</p>
+					<p><span>03</span> Unlock personalised offers</p>
+				</div>
+			</div>
+			<div class="col-md-8 col-lg-5">
+				<section class="auth-card">
+					<p class="text-danger fw-semibold mb-2">JOIN THE TABLE</p>
+					<h2 class="fw-bold mb-2">Create your account</h2>
+					<p class="text-secondary mb-4">It only takes a minute to get started.</p>
+					<form [formGroup]="signupForm" (ngSubmit)="onSubmit()" novalidate>
+						<div class="mb-3">
+							<label for="signupName" class="form-label">Full name</label>
+							<input id="signupName" class="form-control" type="text" placeholder="Your name" formControlName="name" [class.is-invalid]="nameControl.invalid && (nameControl.touched || submitted)">
+							<div class="invalid-feedback" *ngIf="nameControl.hasError('required') && (nameControl.touched || submitted)">Please enter your name.</div>
+						</div>
+						<div class="mb-3">
+							<label for="signupEmail" class="form-label">Email address</label>
+							<input id="signupEmail" class="form-control" type="text" placeholder="Any email or username" formControlName="email" [class.is-invalid]="emailControl.invalid && (emailControl.touched || submitted)">
+							<div class="invalid-feedback" *ngIf="emailControl.hasError('required') && (emailControl.touched || submitted)">Please enter your email address.</div>
+						</div>
+						<div class="mb-3">
+							<label for="signupPassword" class="form-label">Password</label>
+							<input id="signupPassword" class="form-control" type="password" placeholder="Any password" formControlName="password" [class.is-invalid]="passwordControl.invalid && (passwordControl.touched || submitted)">
+							<div class="invalid-feedback" *ngIf="passwordControl.hasError('required') && (passwordControl.touched || submitted)">Please enter a password.</div>
+						</div>
+						<div class="form-check mb-4">
+							<input id="terms" class="form-check-input" type="checkbox" formControlName="terms" [class.is-invalid]="termsControl.invalid && (termsControl.touched || submitted)">
+							<label for="terms" class="form-check-label small text-secondary">I agree to the terms and privacy policy.</label>
+							<div class="invalid-feedback d-block" *ngIf="termsControl.invalid && (termsControl.touched || submitted)">Please accept the terms to continue.</div>
+						</div>
+						<button class="btn btn-danger w-100 rounded-pill py-2" type="submit" [disabled]="signupForm.invalid">Create account</button>
+						<div class="alert alert-success mt-3 mb-0" role="status" *ngIf="successMessage">{{ successMessage }}</div>
+					</form>
+					<p class="text-center text-secondary mt-4 mb-0">Already have an account? <a routerLink="/login" class="auth-link">Log in</a></p>
+				</section>
+			</div>
+		</div>
+	</div>
+</main>

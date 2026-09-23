@@ -1,0 +1,161 @@
+<main>
+	<section class="hero py-5">
+		<div class="container py-lg-4">
+			<div class="row align-items-center g-5">
+				<div class="col-lg-6">
+					<span class="badge text-bg-danger rounded-pill px-3 py-2 mb-3">Good food, good mood</span>
+					<h1 class="display-4 fw-bold lh-sm mb-3">Discover the best food in your city.</h1>
+					<p class="lead text-secondary mb-4">Find your next favourite meal from local restaurants, delivered right to your door.</p>
+					<div class="bg-white rounded-4 shadow-sm p-2">
+						<div class="row g-2">
+							<div class="col-md-5">
+								<label class="visually-hidden" for="location">Location</label>
+								<input id="location" class="form-control form-control-lg border-0" type="text" placeholder="Your location">
+							</div>
+							<div class="col-md-5">
+								<label class="visually-hidden" for="search">Search food</label>
+								<input id="search" class="form-control form-control-lg border-0" type="search" placeholder="Search for dishes">
+							</div>
+							<div class="col-md-2 d-grid">
+								<button class="btn btn-danger btn-lg rounded-3">Search</button>
+							</div>
+						</div>
+					</div>
+					<div class="d-flex gap-4 mt-4 text-secondary small">
+						<span><strong class="text-dark">12k+</strong> restaurants</span>
+						<span><strong class="text-dark">30 min</strong> average delivery</span>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div id="foodCarousel" class="carousel slide rounded-5 shadow-lg overflow-hidden" data-bs-ride="carousel" data-bs-interval="4000">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&fit=crop" class="d-block w-100" alt="Gourmet Plating" style="height: 400px; object-fit: cover;">
+								<div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3 mb-3">
+									<p class="mb-0 fw-semibold">Culinary Magic</p>
+									<small>Extraordinary food experiences</small>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="https://images.pexels.com/photos/5900774/pexels-photo-5900774.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&fit=crop" class="d-block w-100" alt="Artistic Plating" style="height: 400px; object-fit: cover;">
+								<div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3 mb-3">
+									<p class="mb-0 fw-semibold">Artistic Plating</p>
+									<small>Food as masterpiece</small>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&fit=crop" class="d-block w-100" alt="Colorful Cuisine" style="height: 400px; object-fit: cover;">
+								<div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3 mb-3">
+									<p class="mb-0 fw-semibold">Molecular Delight</p>
+									<small>Innovation on a plate</small>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="https://images.pexels.com/photos/1410235/pexels-photo-1410235.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&fit=crop" class="d-block w-100" alt="Fine Dining" style="height: 400px; object-fit: cover;">
+								<div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3 mb-3">
+									<p class="mb-0 fw-semibold">Vibrant Colors</p>
+									<small>Fresh and delicious</small>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&fit=crop" class="d-block w-100" alt="Gourmet Creation" style="height: 400px; object-fit: cover;">
+								<div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3 mb-3">
+									<p class="mb-0 fw-semibold">Fine Dining</p>
+									<small>Exquisite taste</small>
+								</div>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#foodCarousel" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#foodCarousel" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="explore" class="container py-5">
+		<div class="d-flex justify-content-between align-items-end mb-4">
+			<div>
+				<p class="text-danger text-uppercase fw-semibold small mb-1">Explore the menu</p>
+				<h2 class="fw-bold mb-0">What are you craving?</h2>
+			</div>
+			<a class="text-danger text-decoration-none fw-semibold" href="#restaurants">View all <span aria-hidden="true">→</span></a>
+		</div>
+		<div class="row g-4">
+			<div class="col-6 col-md-3">
+				<a class="card category-card border-0 shadow-sm rounded-4 overflow-hidden text-decoration-none text-dark h-100" href="#restaurants">
+					<img class="category-image w-100" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80" alt="Pizza">
+					<div class="card-body"><h3 class="h5 mb-1">Pizza</h3><small class="text-secondary">124 places</small></div>
+				</a>
+			</div>
+			<div class="col-6 col-md-3">
+				<a class="card category-card border-0 shadow-sm rounded-4 overflow-hidden text-decoration-none text-dark h-100" href="#restaurants">
+					<img class="category-image w-100" src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=600&q=80" alt="Asian food">
+					<div class="card-body"><h3 class="h5 mb-1">Asian</h3><small class="text-secondary">98 places</small></div>
+				</a>
+			</div>
+			<div class="col-6 col-md-3">
+				<a class="card category-card border-0 shadow-sm rounded-4 overflow-hidden text-decoration-none text-dark h-100" href="#restaurants">
+					<img class="category-image w-100" src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=600&q=80" alt="Desserts">
+					<div class="card-body"><h3 class="h5 mb-1">Desserts</h3><small class="text-secondary">76 places</small></div>
+				</a>
+			</div>
+			<div class="col-6 col-md-3">
+				<a class="card category-card border-0 shadow-sm rounded-4 overflow-hidden text-decoration-none text-dark h-100" href="#restaurants">
+					<img class="category-image w-100" src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=600&q=80" alt="Healthy bowls">
+					<div class="card-body"><h3 class="h5 mb-1">Healthy</h3><small class="text-secondary">52 places</small></div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section id="restaurants" class="bg-white border-top py-5">
+		<div class="container">
+			<div class="d-flex justify-content-between align-items-end mb-4">
+				<div>
+					<p class="text-danger text-uppercase fw-semibold small mb-1">Top picks near you</p>
+					<h2 class="fw-bold mb-0">Popular restaurants</h2>
+				</div>
+				<button class="btn btn-light rounded-pill d-none d-sm-block">Filter results</button>
+			</div>
+			<div class="row g-4">
+				<div class="col-md-4">
+					<article class="card restaurant-card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+						<img class="restaurant-image w-100" src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=80" alt="Fresh salad bowl">
+						<div class="card-body p-4">
+							<div class="d-flex justify-content-between gap-2"><h3 class="h5 fw-bold">Green & Grain</h3><span class="badge text-bg-success align-self-start">4.8 ★</span></div>
+							<p class="text-secondary mb-2">Healthy bowls · Salads</p>
+							<small class="text-muted">25–35 min · $ · Free delivery</small>
+						</div>
+					</article>
+				</div>
+				<div class="col-md-4">
+					<article class="card restaurant-card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+						<img class="restaurant-image w-100" src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&q=80" alt="Fresh pizza">
+						<div class="card-body p-4">
+							<div class="d-flex justify-content-between gap-2"><h3 class="h5 fw-bold">Crust & Fire</h3><span class="badge text-bg-success align-self-start">4.6 ★</span></div>
+							<p class="text-secondary mb-2">Pizza · Italian</p>
+							<small class="text-muted">20–30 min · $$ · Free delivery</small>
+						</div>
+					</article>
+				</div>
+				<div class="col-md-4">
+					<article class="card restaurant-card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+						<img class="restaurant-image w-100" src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80" alt="Sushi platter">
+						<div class="card-body p-4">
+							<div class="d-flex justify-content-between gap-2"><h3 class="h5 fw-bold">Mizu Kitchen</h3><span class="badge text-bg-success align-self-start">4.9 ★</span></div>
+							<p class="text-secondary mb-2">Japanese · Sushi</p>
+							<small class="text-muted">30–40 min · $$ · Free delivery</small>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>

@@ -1,0 +1,182 @@
+:host {
+	display: block;
+	background: #fffaf7;
+	color: #241d1a;
+}
+
+.hero {
+	background: linear-gradient(120deg, #fff0e8 0%, #fff8f3 52%, #ffe0d3 100%);
+}
+
+.hero-image {
+	min-height: 330px;
+	background: linear-gradient(180deg, rgba(28, 17, 12, 0.04), rgba(28, 17, 12, 0.48)),
+		url('https://images.unsplash.com/photo-1515003194209-d3c7d0c1f6b6?auto=format&fit=crop&w=1100&q=85') center/cover;
+}
+
+.category-card,
+.restaurant-card {
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-card:hover,
+.restaurant-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 0.75rem 1.5rem rgba(65, 38, 25, 0.12) !important;
+}
+
+.category-image,
+.restaurant-image {
+	object-fit: cover;
+}
+
+.category-image {
+	height: 150px;
+}
+
+.restaurant-image {
+	height: 210px;
+}
+
+/* Carousel Styling */
+#foodCarousel {
+	border: none;
+	transition: all 0.3s ease;
+}
+
+#foodCarousel .carousel-inner {
+	border-radius: 2rem;
+	overflow: hidden;
+	box-shadow: 0 1rem 2rem rgba(65, 38, 25, 0.15);
+}
+
+#foodCarousel .carousel-item {
+	transition: transform 0.6s ease, opacity 0.6s ease;
+	background: linear-gradient(45deg, #fff0e8, #fff8f3);
+	min-height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#foodCarousel .carousel-item img {
+	height: 400px !important;
+	object-fit: cover !important;
+	display: block !important;
+	width: 100% !important;
+	transition: transform 0.6s ease;
+}
+
+#foodCarousel .carousel-item.active img {
+	animation: zoomIn 0.6s ease-in-out;
+}
+
+@keyframes zoomIn {
+	from {
+		transform: scale(1.05);
+		opacity: 0.8;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+#foodCarousel .carousel-caption {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	right: 20px;
+	background: rgba(0, 0, 0, 0.6) !important;
+	backdrop-filter: blur(8px);
+	border-radius: 1.5rem;
+	padding: 1rem !important;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	animation: slideUp 0.5s ease;
+}
+
+@keyframes slideUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+#foodCarousel .carousel-caption p {
+	font-size: 1.1rem;
+	color: #fff;
+	font-weight: 600;
+	margin: 0;
+}
+
+#foodCarousel .carousel-caption small {
+	color: rgba(255, 255, 255, 0.85);
+	font-size: 0.85rem;
+	display: block;
+	margin-top: 0.25rem;
+}
+
+/* Carousel Controls */
+#foodCarousel .carousel-control-prev,
+#foodCarousel .carousel-control-next {
+	width: 50px;
+	height: 50px;
+	background-color: rgba(226, 55, 68, 0.7);
+	border-radius: 50%;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: all 0.3s ease;
+	opacity: 0.7;
+}
+
+#foodCarousel .carousel-control-prev:hover,
+#foodCarousel .carousel-control-next:hover {
+	background-color: rgba(226, 55, 68, 0.9);
+	opacity: 1;
+	transform: translateY(-50%) scale(1.1);
+}
+
+#foodCarousel .carousel-control-prev {
+	left: 15px;
+}
+
+#foodCarousel .carousel-control-next {
+	right: 15px;
+}
+
+#foodCarousel .carousel-control-prev-icon,
+#foodCarousel .carousel-control-next-icon {
+	width: 1.5rem;
+	height: 1.5rem;
+	filter: brightness(0) invert(1);
+}
+
+/* Carousel Indicators */
+#foodCarousel .carousel-indicators {
+	bottom: 20px;
+	gap: 0.5rem;
+	padding-left: 0;
+}
+
+#foodCarousel .carousel-indicators button {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: none;
+	transition: all 0.3s ease;
+}
+
+#foodCarousel .carousel-indicators button.active {
+	background-color: #e23744;
+	width: 12px;
+	transform: scale(1.2);
+}
+
+#foodCarousel .carousel-indicators button:hover {
+	background-color: rgba(255, 255, 255, 0.8);
+}
