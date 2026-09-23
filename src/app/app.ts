@@ -8,4 +8,13 @@ import { Component, signal } from '@angular/core';
 })
 export class App {
   protected readonly title = signal('Zomato');
+  protected menuOpen = false;
+
+  protected toggleMenu(): void {
+    this.menuOpen = !this.menuOpen;
+  }
+
+  protected closeMenu(): void {
+    this.menuOpen = false;
+  }
 }
