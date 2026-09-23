@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML Lists Demo</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			background: #f4f7fb;
+			color: #243447;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 40px 20px;
+		}
+
+		.page {
+			margin: auto;
+			max-width: 900px;
+		}
+
+		h1 {
+			color: #173f5f;
+			margin-bottom: 8px;
+			text-align: center;
+		}
+
+		.intro {
+			color: #526777;
+			margin-bottom: 30px;
+			text-align: center;
+		}
+
+		.list-container {
+			display: grid;
+			gap: 24px;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+
+		.list-card {
+			background: white;
+			border-radius: 12px;
+			box-shadow: 0 6px 18px rgba(23, 63, 95, 0.12);
+			padding: 24px;
+		}
+
+		.ordered-card {
+			border-top: 6px solid #f28f3b;
+		}
+
+		.unordered-card {
+			border-top: 6px solid #3caea3;
+		}
+
+		.roman-card {
+			border-top: 6px solid #7b61a8;
+		}
+
+		h2 {
+			margin-top: 0;
+		}
+
+		ol,
+		ul {
+			line-height: 1.9;
+			padding-left: 28px;
+		}
+
+		ol {
+			color: #b85c00;
+		}
+
+		ul {
+			color: #18756e;
+		}
+
+		li {
+			padding-left: 5px;
+		}
+
+		.tip {
+			background: #e8f1f8;
+			border-left: 4px solid #173f5f;
+			margin-top: 26px;
+			padding: 14px 18px;
+		}
+
+		code {
+			background: #dce8f2;
+			border-radius: 4px;
+			padding: 2px 5px;
+		}
+
+		@media (max-width: 650px) {
+			.list-container {
+				grid-template-columns: 1fr;
+			}
+		}
+	</style>
+</head>
+<body>
+	<main class="page">
+		<h1>HTML Lists</h1>
+		<p class="intro">HTML has two common list types: ordered lists and unordered lists.</p>
+
+		<section class="list-container">
+			<article class="list-card ordered-card">
+				<h2>Alphabetic List</h2>
+				<p>Use <code>&lt;ol type="a"&gt;</code> for <code>a, b, c</code>.</p>
+				<ol type="a">
+					<li>Choose a topic</li>
+					<li>Open your notes</li>
+					<li>Read the lesson</li>
+					<li>Write key points</li>
+					<li>Practice examples</li>
+					<li>Check your answers</li>
+					<li>Review your work</li>
+					<li>Ask a question</li>
+					<li>Find an answer</li>
+					<li>Make a summary</li>
+					<li>Study with a friend</li>
+					<li>Take a short break</li>
+					<li>Try a quiz</li>
+					<li>Fix mistakes</li>
+					<li>Learn a new word</li>
+					<li>Write an example</li>
+					<li>Explain the topic</li>
+					<li>Set a goal</li>
+					<li>Finish the lesson</li>
+				</ol>
+			</article>
+
+			<article class="list-card roman-card">
+				<h2>Roman Numerals</h2>
+				<p>Use <code>&lt;ol type="I"&gt;</code> for <code>I, II, III</code>.</p>
+				<ol type="I">
+					<li>Wake up</li>
+					<li>Have breakfast</li>
+					<li>Go to school</li>
+					<li>Attend class</li>
+					<li>Complete homework</li>
+					<li>Read a book</li>
+					<li>Go to sleep</li>
+					<li>Set an alarm</li>
+					<li>Pack a bag</li>
+					<li>Drink some water</li>
+					<li>Plan the day</li>
+					<li>Put on shoes</li>
+					<li>Leave the house</li>
+					<li>Meet a friend</li>
+					<li>Eat lunch</li>
+					<li>Finish a project</li>
+					<li>Clean the desk</li>
+					<li>Relax in the evening</li>
+					<li>Prepare for tomorrow</li>
+					<li>Turn off the lights</li>
+				</ol>
+			</article>
+
+			<article class="list-card unordered-card">
+				<h2>Unordered List</h2>
+				<p>Use <code>&lt;ul&gt;</code> when the order does not matter.</p>
+				<ul>
+					<li>Apples</li>
+					<li>Bananas</li>
+					<li>Oranges</li>
+					<li>Grapes</li>
+					<li>Mangoes</li>
+					<li>Peaches</li>
+					<li>Watermelons</li>
+					<li>Strawberries</li>
+					<li>Pears</li>
+					<li>Cherries</li>
+					<li>Plums</li>
+					<li>Kiwi</li>
+					<li>Pineapple</li>
+					<li>Blueberries</li>
+					<li>Raspberries</li>
+					<li>Guavas</li>
+					<li>Papayas</li>
+					<li>Apricots</li>
+					<li>Figs</li>
+					<li>Coconuts</li>
+				</ul>
+			</article>
+		</section>
+
+		<p class="tip"><strong>Remember:</strong> Both list types use <code>&lt;li&gt;</code> for each list item.</p>
+	</main>
+</body>
+</html>

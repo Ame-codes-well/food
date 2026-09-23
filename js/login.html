@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Log in | Orbit</title>
+	<style>
+		:root { --ink:#17212b; --muted:#607180; --cream:#fffaf0; --coral:#ff7058; --teal:#1e918b; } * { box-sizing:border-box; } body { display:grid; place-items:center; min-height:100vh; margin:0; color:var(--ink); font-family:Georgia,'Times New Roman',serif; background:linear-gradient(135deg,#e7f4ef,#f9e2d6); } .wrap { width:min(90%,460px); padding:28px; } .logo { display:block; margin-bottom:48px; color:var(--ink); font-size:1.5rem; font-weight:bold; text-decoration:none; } .logo span {color:var(--coral);} .panel { padding:clamp(28px,7vw,54px); background:var(--cream); border:1px solid rgba(23,33,43,.16); box-shadow:12px 14px 0 var(--teal); } h1 { margin:0 0 12px; font-size:clamp(2.5rem,8vw,4rem); line-height:.95; letter-spacing:-.05em; } .intro { margin:0 0 34px; color:var(--muted); font: .95rem/1.5 Arial,sans-serif; } label { display:block; margin:18px 0 7px; font:700 .72rem Arial,sans-serif; letter-spacing:.1em; text-transform:uppercase; } input { width:100%; padding:14px 0; color:var(--ink); background:transparent; border:0; border-bottom:1px solid #aeb9bd; outline:none; font:1rem Arial,sans-serif; } input:focus { border-color:var(--coral); } button { width:100%; margin-top:28px; padding:15px; color:white; background:var(--coral); border:0; border-radius:99px; cursor:pointer; font:700 .9rem Arial,sans-serif; } button:hover { background:#df5b47; } .foot { margin:28px 0 0; text-align:center; font: .82rem Arial,sans-serif; } a { color:var(--teal); font-weight:bold; } .back { display:inline-block; margin-top:28px; color:var(--ink); font: .8rem Arial,sans-serif; } 
+		body { background: linear-gradient(90deg, rgba(23,33,43,.52), rgba(217,239,240,.25)), url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=2200&q=85') center/cover fixed; }
+		.wrap { width: min(92%, 470px); }
+		.logo { color: white; text-shadow: 0 2px 12px rgba(0,0,0,.25); }
+		.panel { border-radius: 4px; background: rgba(255,250,240,.93); backdrop-filter: blur(16px); box-shadow: 14px 16px 0 rgba(30,145,139,.85), 0 25px 55px rgba(0,0,0,.2); }
+		.back { color: white; text-shadow: 0 1px 8px rgba(0,0,0,.3); }
+		.wrap { animation: slide-in-left .7s cubic-bezier(.2,.8,.2,1) both; }
+		@keyframes slide-in-left { from { opacity: 0; transform: translateX(-42px); } to { opacity: 1; transform: translateX(0); } }
+		@media (prefers-reduced-motion: reduce) { .wrap { animation: none; } }
+	</style>
+</head>
+<body><main class="wrap"><a class="logo" href="index.html">orbit<span>·</span></a><section class="panel"><h1>Welcome back.</h1><p class="intro">Your corner of the internet missed your particular flavor of weird.</p><form action="index.html"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com"><label for="password">Password</label><input id="password" name="password" type="password" autocomplete="current-password" required placeholder="Your secret phrase"><button type="submit">Log in to Orbit</button></form><p class="foot">New here? <a href="register.html">Create an account</a></p></section><a class="back" href="index.html">← Back to home</a></main></body>
+</html>

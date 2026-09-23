@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Table Demo</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML Table Tags</h1>
+    <p>This table shows how the most common table tags work together.</p>
+
+    <table>
+        <caption>Weekly Study Plan</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Day</th>
+                <th scope="col">Topic</th>
+                <th scope="col">Hours</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row">Monday</th>
+                <td>HTML basics</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <th scope="row">Tuesday</th>
+                <td>HTML tables</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th scope="row">Wednesday</th>
+                <td>CSS basics</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2">Total hours</td>
+                <td>5</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Tag meanings</h2>
+    <ul>
+        <li><code>table</code>: creates the table.</li>
+        <li><code>caption</code>: gives the table a title.</li>
+        <li><code>thead</code>, <code>tbody</code>, and <code>tfoot</code>: group the header, body, and footer rows.</li>
+        <li><code>tr</code>: creates a table row.</li>
+        <li><code>th</code>: creates a heading cell.</li>
+        <li><code>td</code>: creates a normal data cell.</li>
+        <li><code>colspan="2"</code>: makes one cell span across two columns.</li>
+    </ul>
+
+</body>
+</html>

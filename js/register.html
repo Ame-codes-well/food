@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Join Orbit</title>
+	<style>
+		:root { --ink:#17212b; --muted:#607180; --cream:#fffaf0; --coral:#ff7058; --teal:#1e918b; } * { box-sizing:border-box; } body { display:grid; place-items:center; min-height:100vh; margin:0; color:var(--ink); font-family:Georgia,'Times New Roman',serif; background:linear-gradient(135deg,#f9e2d6,#e7f4ef); } .wrap { width:min(90%,460px); padding:28px; } .logo { display:block; margin-bottom:40px; color:var(--ink); font-size:1.5rem; font-weight:bold; text-decoration:none; } .logo span {color:var(--coral);} .panel { padding:clamp(28px,7vw,54px); background:var(--cream); border:1px solid rgba(23,33,43,.16); box-shadow:12px 14px 0 var(--coral); } h1 { margin:0 0 12px; font-size:clamp(2.5rem,8vw,4rem); line-height:.95; letter-spacing:-.05em; } .intro { margin:0 0 28px; color:var(--muted); font: .95rem/1.5 Arial,sans-serif; } label { display:block; margin:16px 0 7px; font:700 .72rem Arial,sans-serif; letter-spacing:.1em; text-transform:uppercase; } input { width:100%; padding:13px 0; color:var(--ink); background:transparent; border:0; border-bottom:1px solid #aeb9bd; outline:none; font:1rem Arial,sans-serif; } input:focus { border-color:var(--teal); } button { width:100%; margin-top:26px; padding:15px; color:white; background:var(--teal); border:0; border-radius:99px; cursor:pointer; font:700 .9rem Arial,sans-serif; } button:hover { background:#147872; } .terms { margin:18px 0 0; color:var(--muted); font: .72rem/1.4 Arial,sans-serif; } .foot { margin:24px 0 0; text-align:center; font: .82rem Arial,sans-serif; } a { color:var(--teal); font-weight:bold; } .back { display:inline-block; margin-top:25px; color:var(--ink); font: .8rem Arial,sans-serif; }
+		body { background: linear-gradient(90deg, rgba(23,33,43,.48), rgba(249,226,214,.2)), url('https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=2200&q=85') center/cover fixed; }
+		.wrap { width: min(92%, 470px); }
+		.logo { color: white; text-shadow: 0 2px 12px rgba(0,0,0,.25); }
+		.panel { border-radius: 4px; background: rgba(255,250,240,.93); backdrop-filter: blur(16px); box-shadow: 14px 16px 0 rgba(255,112,88,.88), 0 25px 55px rgba(0,0,0,.2); }
+		.back { color: white; text-shadow: 0 1px 8px rgba(0,0,0,.3); }
+		.wrap { animation: slide-in-right .7s cubic-bezier(.2,.8,.2,1) both; }
+		@keyframes slide-in-right { from { opacity: 0; transform: translateX(42px); } to { opacity: 1; transform: translateX(0); } }
+		@media (prefers-reduced-motion: reduce) { .wrap { animation: none; } }
+	</style>
+</head>
+<body><main class="wrap"><a class="logo" href="index.html">orbit<span>·</span></a><section class="panel"><h1>Come on in.</h1><p class="intro">Bring your curiosities. Leave your perfectly polished profile at the door.</p><form action="index.html"><label for="name">Display name</label><input id="name" name="name" type="text" autocomplete="name" required placeholder="What should we call you?"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com"><label for="password">Password</label><input id="password" name="password" type="password" autocomplete="new-password" minlength="8" required placeholder="8 characters or more"><button type="submit">Start my orbit</button><p class="terms">By joining, you agree to be kind, stay curious, and not feed the algorithm after midnight.</p></form><p class="foot">Already orbiting? <a href="login.html">Log in</a></p></section><a class="back" href="index.html">← Back to home</a></main></body>
+</html>
